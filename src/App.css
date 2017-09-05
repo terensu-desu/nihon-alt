@@ -1,0 +1,89 @@
+body {
+  font-family: "Didact Gothic", "Meiryo UI";
+  width: 100%;
+  margin-top: 0;
+  background-size: 100% 100%;
+}
+
+nav {
+  background-color: #f5f5f5;
+}
+
+p {
+  font-size: 1.02rem;
+}
+
+span {
+  color: #bc002d;
+}
+
+li .active {
+  color: #bc002d;
+}
+
+a {
+  color: #ff9800;
+}
+
+#nihon-banner .section {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.nav-wrapper a{
+  color: black;
+}
+
+.view-wrapper {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.dropdown-content li a {
+  color: black;
+}
+
+.lang-switch {
+  background: #e0e0e0;
+}
+
+.page-btn {
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #ff9800;
+}
+
+.page-btn:hover, {
+  background-color: #bdbdbd;
+}
+
+.active-page-btn {
+  background-color: #bdbdbd;
+}
+
+.de-link {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* for material icons sizing and theming */
+.material-icons.md-18 {
+  font-size: 18px; }
+.material-icons.md-24 {
+  font-size: 24px; }
+.material-icons.md-36 {
+  font-size: 36px; }
+.material-icons.md-48 {
+  font-size: 48px; }
+.material-icons.md-60 {
+  font-size: 60px; }
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-span {
+  color: #bc002d; }
+.material-icons.md-light {
+  color: white; }
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3); }
