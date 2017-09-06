@@ -9,7 +9,7 @@ class NihonALT extends Component {
   render() {
     return (
     	<div className="container-fluid">
-        <Navbar />
+        <Navbar english={ this.props.english } updateLang={ this.props.updateLang } />
         <Banner />
         <div className="section view-wrapper">
           <Route exact path="/" component={ Home } />

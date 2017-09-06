@@ -3,14 +3,14 @@ import React, { Component } from 'react'
 class Banner extends Component {
   render() {
   	const rText = []
-  	rText[0] = "The best AETs.... in the world!"
-    rText[1] = "Affecting. Engaging. Teaching."
+  	rText[0] = "The best ALTs.... in the world!"
+    rText[1] = "Affecting. Leading. Teaching."
     rText[2] = "Globalization, in the classroom."
     rText[3] = "For all your English teaching needs."
     rText[4] = "朝飯前!"
     rText[5] = "英語放題。"
     rText[6] = "RPS or RSP, you decide."
-    rText[7] = "Supplying Ms. Bakers to your school."
+    rText[7] = "Otsukaresama desu!"
     rText[8] = "Let's speak English!"
 		const i = Math.floor(rText.length * Math.random())
     const bannerStyle = {
