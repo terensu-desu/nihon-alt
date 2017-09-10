@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 import Home from './Home'
 import Pages from './Pages'
 
-class NihonALT extends Component {	
+class NihonALT extends Component {
   render() {
     return (
     	<div className="container-fluid">
