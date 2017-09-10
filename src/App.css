@@ -70,9 +70,18 @@ a {
   width: 85% !important
 }
 
+.article p {
+  font-size: 1.1rem;
+  margin-bottom: 10px !important
+}
+
 .de-link {
   pointer-events: none;
   cursor: default;
+}
+
+.upload-hr{
+  border-top: 1px dashed #8c8b8b;
 }
 
 /* for material icons sizing and theming */
