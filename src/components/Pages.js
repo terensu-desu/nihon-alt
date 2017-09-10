@@ -62,7 +62,7 @@ class Pages extends Component {
         <div className="col s12 l6" key={i}>
           <div className="card horizontal">
             <div className="card-image">
-              <a href={ item.image }><img src={ item.image } alt="preview" /></a>
+              <img className="materialboxed" data-caption={ item.title } src={ item.image } alt="preview" />
             </div>
             <div className="card-stacked">
               <div className="card-content">
