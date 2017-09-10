@@ -4383,10 +4383,6 @@ class PageDataStore extends EventEmitter{
 			}
 		}
 	}
-
-	getChapter(chapterId){
-		return this[chapterId];
-	}
 }
 
 const pageData = new PageDataStore()
