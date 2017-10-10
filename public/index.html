@@ -24,7 +24,7 @@
     -->
     <title>Nihon ALT - Teach English With Ease</title>
   </head>
-  <body onload="reInitPage()">
+  <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
@@ -40,20 +40,16 @@
         $(".dropdown-button").dropdown();
         $(".button-collapse").sideNav();
         $('.modal').modal();
-        $('.materialboxed').materialbox();
         setInterval(function(){
           reInitPage()
         }, 3000)
       })
       var currentLocation = window.location.href
       function reInitPage() {
-        console.log("reInitPage run")
         if(currentLocation != window.location.href) {
-          console.log("difference detected")
           $(".dropdown-button").dropdown();
           $(".button-collapse").sideNav();
           $('.modal').modal();
-          $('.materialboxed').materialbox();
           currentLocation = window.location.href
         }
       }
