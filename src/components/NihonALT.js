@@ -14,11 +14,11 @@ class NihonALT extends Component {
         <div className="section view-wrapper">
           <Route exact path="/" component={ Home } />
           <Route path="/:loc/:id" component={ Pages } />
-        </div>
-        <div className="copyright-footer">
-          <div className="container">
+          <div className="footer-copyright">
+            <div className="container">
             <p className="center">Created by Terence Mangram using React, Materialize, and jQuery.</p>
           </div>
+        </div>
         </div>
       </div>
     )

@@ -53,16 +53,22 @@ class Pages extends Component {
       pageData: PageDataStore.pageData
     })
   }
-
+  
+  // load page data (file titles, image, download link, etc.) by taking the data and mapping it to a template.
   loadPage(id) {
     //put data through a map
-    const itemData = this.state.pageData[id]
-    const displayData = itemData.map((item, i) => {
+    let itemData = this.state.pageData[id]
+    let displayData = itemData.map((item, i) => {
       return (
-        <div className="col s12 l6" key={i}>
+        <div className="col s12 l6 display-linebreak" key={i}>
+          <div id={ "imgModal" + i} className="img-modal">
+            <i onClick={() => {document.getElementById("imgModal"+i).style.display="none"} } className="material-icons img-close">close</i>
+            <img className="img-modal-content" id={ "modal-img" + i} src={ item.image } alt="expanded view" />
+            <div id="caption">{ item.title }</div>
+          </div>
           <div className="card horizontal">
-            <div className="card-image">
-              <img className="materialboxed" data-caption={ item.title } src={ item.image } alt="preview" />
+            <div className="card-image worksheet-img">
+              <img onClick={() => {document.getElementById("imgModal"+i).style.display="block"} } src={ item.image } alt="preview" />
             </div>
             <div className="card-stacked">
               <div className="card-content">
@@ -74,15 +80,17 @@ class Pages extends Component {
               </div>
             </div>
           </div>
+          
         </div>
       )
     })
     return displayData
   }
 
+  // load links onto the page to match the current location's info.
   loadLinks() {
-    const data = this.state.pageData
-    const dataKeys = Object.keys(data)
+    let data = this.state.pageData
+    let dataKeys = Object.keys(data)
     function checkActive(props, link) {
       if (props === link) {
         return "active-page-btn"
@@ -171,16 +179,16 @@ class Pages extends Component {
         }
       }
     }
-    const linkList = dataKeys.map((link, i) => {
+    let linkList = dataKeys.map((link, i) => {
       return (
-        <Link className={ "waves-effect waves-light btn page-btn " + checkActive(this.props.match.params.id, link) } key={i} to={ "/" + this.props.match.params.loc + "/" + link}>{ checkName(link) }</Link>
+        <Link className={ "waves-effect btn page-btn " + checkActive(this.props.match.params.id, link) } key={i} to={ "/" + this.props.match.params.loc + "/" + link}>{ checkName(link) }</Link>
       )
     })
     return linkList
   }
 
   pageTitle() {
-    const loc = this.props.match.params.loc
+    let loc = this.props.match.params.loc
     switch(loc) {
         //NH1 start
         case "nh1u1":{
@@ -290,8 +298,6 @@ class Pages extends Component {
   }
 
   render() {
-    console.log(this.props)
-
     return (
       	<div className="container-fluid">
           <div className="section">

@@ -10,8 +10,8 @@ class RecentUploadsList extends Component {
   }
 
   loadList() {
-    const listData = this.state.uploadlist
-    const listMap = listData.map((item, i) => {
+    let listData = this.state.uploadlist
+    let listMap = listData.map((item, i) => {
       return (
         <div className="col s12 center" key={i}>
             <h5> { item.title } <span>by { item.author }</span></h5>
@@ -25,7 +25,7 @@ class RecentUploadsList extends Component {
 
   render() {
     return (
-    	<div className="row">
+    	<div className="row low-margin">
         { this.loadList() }
       </div>
     )
