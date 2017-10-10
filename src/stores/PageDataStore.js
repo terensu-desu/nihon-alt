@@ -15,28 +15,28 @@ class PageDataStore extends EventEmitter{
 				{
 					key: 1,
 					title: "Lesson Plan for Unit 1 Guess Who Activity 1",
-					image: "https://placehold.it/500x600",
+					image: "https://i.imgur.com/mfsEPMw.jpg",
 					download: "#!",
-					instructions: "Lorem ipsum dolor sit amet, eu officiis scribentur sed. Erroribus scribentur mea ne. Illud ceteros eum cu. Te meliore eleifend qui, cum principes philosophia an."
+					instructions: "Lorem ipsum dolor sit amet, eu officiis scribentur sed. Erroribus scribentur mea ne. \n Illud ceteros eum cu. Te meliore eleifend qui, cum principes philosophia an."
 				},
 				{
 					key: 2,
 					title: "Lesson Plan for Unit 1 Guess Who Activity 2",
-					image: "https://placehold.it/500x600",
+					image: "https://i.imgur.com/LoCF7pA.jpg",
 					download: "#!",
 					instructions: "Lorem ipsum dolor sit amet, eu officiis scribentur sed. Erroribus scribentur mea ne. Illud ceteros eum cu. Te meliore eleifend qui, cum principes philosophia an."
 				},
 				{
 					key: 3,
 					title: "Lesson Plan for Unit 1 Part 3 Key Grammar",
-					image: "https://placehold.it/500x600",
+					image: "https://i.imgur.com/gu053Uy.jpg",
 					download: "#!",
 					instructions: "Lorem ipsum dolor sit amet, eu officiis scribentur sed. Erroribus scribentur mea ne. Illud ceteros eum cu. Te meliore eleifend qui, cum principes philosophia an."
 				},
 				{
 					key: 4,
 					title: "Lesson Plan for Unit 1 Part 3 Speaking Test",
-					image: "https://placehold.it/500x600",
+					image: "https://i.imgur.com/qKZET84.jpg",
 					download: "#!",
 					instructions: "Lorem ipsum dolor sit amet, eu officiis scribentur sed. Erroribus scribentur mea ne. Illud ceteros eum cu. Te meliore eleifend qui, cum principes philosophia an."
 				}
@@ -4367,7 +4367,6 @@ class PageDataStore extends EventEmitter{
 	}
 
 	loadPage(loc) {
-		console.log("Hello, loadPage method has been called in the store. " + this[loc])
 		this.pageData = this[loc]
 	}
 

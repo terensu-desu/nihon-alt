@@ -28,6 +28,12 @@ class RecentUploadsStore extends EventEmitter{
 				author: "Jill K.",
 				text: "Students will enjoy and master the grammar with this!",
 				level: "Special Needs"
+			},
+			{
+				title: "Battleship One Piece Version!",
+				author: "Jill K.",
+				text: "Students will enjoy and master the grammar with this!",
+				level: "Special Needs"
 			}
 		]
 
