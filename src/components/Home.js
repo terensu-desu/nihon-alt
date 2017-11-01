@@ -27,7 +27,7 @@ class Home extends Component {
   }
 
   render() {
-    let cardActionStyle = {
+    const cardActionStyle = {
         padding: "8px 24px 24px 24px"
     }
     return (
