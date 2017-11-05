@@ -10,7 +10,6 @@ class Home extends Component {
       articlepage: 1
     }
   }
-
   pageChangeUp() {
     if(this.state.articlepage !== 3) {
       this.setState((prevState) => ({
