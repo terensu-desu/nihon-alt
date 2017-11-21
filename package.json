@@ -5,10 +5,7 @@
   "homepage": "https://terensu-desu.github.io/nihon-alt",
   "dependencies": {
     "flux": "^3.1.3",
-<<<<<<< HEAD
     "gh-pages": "^1.1.0",
-=======
->>>>>>> 4bb17425e737d90a10b3957a24e7bc8c94b91490
     "jquery": "^3.2.1",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
