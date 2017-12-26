@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-class Navbar extends Component {
-
+export default class Navbar extends Component {
   render() {
     return (
       <div id="nihon-nav">
       	<nav>
-      		<div className="view-wrapper nav-wrapper">
+      		<div className="nav-wrapper">
       			<Link to="/" className="brand-logo">Nihon <span>ALT</span></Link>
             <a href="#!" data-activates="mobile-nav" className="button-collapse"><i className="material-icons">menu</i></a>
       			<ul id="nav-mobile" className="right hide-on-med-and-down">
@@ -16,8 +15,7 @@ class Navbar extends Component {
       				<li><a className="dropdown-button" data-beloworigin="true" data-activates="nh2">NH2<i className="material-icons right"><span>arrow_drop_down</span></i></a></li>
               <li><a className="dropdown-button" data-beloworigin="true" data-activates="nh3">NH3<i className="material-icons right"><span>arrow_drop_down</span></i></a></li>
               <li><a className="dropdown-button" data-beloworigin="true" data-activates="sn">Special Needs<i className="material-icons right"><span>arrow_drop_down</span></i></a></li>
-              <li><a href="#!">Upload<i className="material-icons right"><span>file_upload</span></i></a></li>
-              <li className="lang-switch"><a onClick={ this.props.updateLang }>Switch to { this.props.english ? '日本語' : 'English'}</a></li>
+              <li className="lang-switch"><a onClick={this.props.updateLanguage}>Switch to {this.props.english ? '日本語' : 'English'}</a></li>
       			</ul>
 
             <ul className="side-nav center" id="mobile-nav">
@@ -26,8 +24,7 @@ class Navbar extends Component {
               <li><a className="dropdown-button" data-beloworigin="true" data-activates="nh2m">NH2<i className="material-icons right"><span>arrow_drop_down</span></i></a></li>
               <li><a className="dropdown-button" data-beloworigin="true" data-activates="nh3m">NH3<i className="material-icons right"><span>arrow_drop_down</span></i></a></li>
               <li><a className="dropdown-button" data-beloworigin="true" data-activates="snm">Special Needs<i className="material-icons right"><span>arrow_drop_down</span></i></a></li>
-              <li><a href="#!">Upload<i className="material-icons right">file_upload</i></a></li>
-              <li className="lang-switch"><a onClick={ this.props.updateLang }>Switch to { this.props.english ? '日本語' : 'English'}</a></li>
+              <li className="lang-switch"><a onClick={this.props.updateLanguage}>Switch to {this.props.english ? '日本語' : 'English'}</a></li>
             </ul>
       		</div>
         </nav>
@@ -114,5 +111,3 @@ class Navbar extends Component {
     )
   }
 }
-
-export default Navbar

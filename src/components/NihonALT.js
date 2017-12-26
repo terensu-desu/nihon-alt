@@ -5,24 +5,18 @@ import Navbar from './Navbar'
 import Home from './Home'
 import Pages from './Pages'
 
-class NihonALT extends Component {
+export default class NihonALT extends Component {
   render() {
     return (
-    	<div className="container-fluid">
-        <Navbar english={ this.props.english } updateLang={ this.props.updateLang } />
+    	<div>
+        <Navbar english={this.props.english} updateLanguage={this.props.updateLanguage} />
         <Banner />
-        <div className="section view-wrapper">
-          <Route exact path="/" component={ Home } />
-          <Route path="/:loc/:id" component={ Pages } />
-          <div className="footer-copyright">
-            <div className="container">
-            <p className="center">Created by Terence Mangram using React, Materialize, and jQuery.</p>
-          </div>
-        </div>
+        <Route exact path="/" component={Home} />
+        <Route path="/:loc/:id" component={Pages} />
+        <div className="footer-copyright">
+          <p className="center">Created by Terence Mangram using React, MaterializeCSS, and jQuery.</p>
         </div>
       </div>
     )
   }
 }
-
-export default NihonALT

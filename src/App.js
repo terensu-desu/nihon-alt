@@ -1,30 +1,24 @@
 import React, { Component } from 'react'
 import { HashRouter as Router } from 'react-router-dom' //normally BrowserRouter but can also be HashRouter
-import NihonALT from './components/NihonALT'
-import './App.css'
+import NihonALT from './components/NihonALT';
 
-class App extends Component {
+export default class App extends Component {
 	constructor() {
-		super()
-		this.state = {
-			english: true
-		}
+		super();
+		this.state = { english: true };
+    this.handleLanguageUpdate = this.handleLanguageUpdate.bind(this);
 	}
-
-	handleLangUpdate(e) {
-    this.setState({
-      english: !this.state.english
-    })
-    e.preventDefault()
+  // Function toggle English language on and off, which will determine what language data the store sends.
+	handleLanguageUpdate(e) {
+    this.setState({ english: !this.state.english });
+    e.preventDefault();
   }
 
   render() {
     return (
       <Router>
-      	<NihonALT english={ this.state.english } updateLang={ this.handleLangUpdate.bind(this) }/>
+      	<NihonALT english={this.state.english} updateLanguage={this.handleLanguageUpdate}/>
       </Router>
     )
   }
 }
-
-export default App
